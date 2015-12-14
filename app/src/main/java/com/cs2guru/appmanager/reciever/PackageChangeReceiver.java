@@ -2,6 +2,7 @@ package com.cs2guru.appmanager.reciever;
 
 import java.io.ByteArrayOutputStream;
 
+import com.cs2guru.appmanager.R;
 import com.cs2guru.appmanager.Utils;
 import com.cs2guru.appmanager.database.AppManagerInfo;
 import com.cs2guru.appmanager.database.DatabaseHandler;
@@ -12,7 +13,10 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.util.Log;
+import android.widget.Toast;
 
 public class PackageChangeReceiver extends BroadcastReceiver {
 	String TAG = "PackageChangeReceiver";

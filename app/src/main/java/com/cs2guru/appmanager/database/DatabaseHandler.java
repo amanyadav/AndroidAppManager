@@ -146,7 +146,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 					cursor.getString(4), cursor.getBlob(5));
 			cursor.close();
 		}
-		db.close();
+
 		// return app
 		return info;
 	}

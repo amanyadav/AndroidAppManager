@@ -1,6 +1,7 @@
 package com.cs2guru.appmanager.fragments;
 
 import com.cs2guru.appmanager.R;
+import com.cs2guru.appmanager.adapter.InstalledFragmentAdapter;
 import com.cs2guru.appmanager.adapter.UpdatedFragmentAdapter;
 
 import android.os.Bundle;
