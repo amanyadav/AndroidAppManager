@@ -125,7 +125,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 		// Inserting Row
 		db.insert(TABLE_APP_INFO, null, values);
-		db.close(); // Closing database connection
 		dataChanged();
 	}
 
@@ -144,8 +143,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 					cursor.getString(1), cursor.getString(2),
 					Integer.parseInt(cursor.getString(3)),
 					cursor.getString(4), cursor.getBlob(5));
-			cursor.close();
 		}
+		cursor.close();
 
 		// return app
 		return info;
